@@ -105,13 +105,9 @@ padding: 20px;
     right: 20px;
   }
 
-.location{
-  color: white;
-  font-weight: 400;
-  font-size: large;
-  text-transform: uppercase;
-  letter-spacing:0cqmax;
-}
+/* .location{
+ 
+} */
 .details-container{
   padding: 10px;
   font-weight: 700;
@@ -127,9 +123,13 @@ padding: 20px;
    font-weight: 900;
 }
 .details-container > p:first-child {
-  font-size: medium;
   font-weight: 900;
   opacity:0.7;
+  color: white;
+  font-weight: 600;
+  font-size:x-large;
+  text-transform: uppercase;
+  letter-spacing:0cqmax;
 }
 
 .alignCenter{

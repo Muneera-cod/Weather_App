@@ -1,11 +1,11 @@
 import axios from 'axios'
-import  { useState } from 'react'
+import  { useEffect, useState } from 'react'
 
 function WeatherContainer() {
 
   const key = import.meta.env.VITE_API_KEY
 
-  const [location,setLocation] = useState('')
+  const [location,setLocation] = useState('India')
   const [data,setData] = useState({})
   const [day,setDay] = useState('')
   const [loading,setLoading] = useState(false)
@@ -34,8 +34,10 @@ function WeatherContainer() {
     setLoading(false)
   }
   }
-
-
+  useEffect(()=>{
+    // setLocation('Kerala')
+    searchLocation()
+  },[location])
   return (
     <div className='container'>
         <div className='searchDiv'>
